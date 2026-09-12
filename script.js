@@ -63,7 +63,8 @@ document.querySelectorAll(".open-detail").forEach((button) => {
         
         const box = this.closest(".portfolio-box");
         const title = box.querySelector(".portfolio-layer h4").innerText;
-        const description = box.querySelector(".portfolio-desc").innerText;
+        // GET FULL TEXT FROM DATA ATTRIBUTE INSTEAD OF TRUNCATED TEXT
+        const description = this.getAttribute("data-full-desc") || box.querySelector(".portfolio-desc").innerText;
 
         modalProjectTitle.innerText = title;
         modalProjectDesc.innerText = description;
