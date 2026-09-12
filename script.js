@@ -63,7 +63,7 @@ document.querySelectorAll(".open-detail").forEach((button) => {
         
         const box = this.closest(".portfolio-box");
         const title = box.querySelector(".portfolio-layer h4").innerText;
-        const description = box.querySelector(".portfolio-layer p").innerText;
+        const description = box.querySelector(".portfolio-desc").innerText;
 
         modalProjectTitle.innerText = title;
         modalProjectDesc.innerText = description;
