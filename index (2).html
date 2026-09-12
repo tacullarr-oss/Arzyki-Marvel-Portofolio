@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arzyki Marvel Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Header / Navigasi Utama -->
+    <header class="header">
+        <a href="#" class="logo">Arzyki.</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <!-- Halaman Utama Portofolio -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm Arzyki Marvel </h1>
+            <h3>Student from SMK Krian 1</h3>
+            <p>I Am a <strong>Software Engineering</strong> Student at SMK Krian 1 who is interested in web development and programming. I enjoy learning new technologies and creating usefull digital projects.</p>
+            
+            <div class="btn-box">
+                <a href="#">Hire Me</a>
+                <a href="#">Let's Talk</a>
+            </div>
+
+            <div class="home-sci">
+                <a href="mailto:tacullarr@gmail.com"><i class='bx bxl-gmail'></i></a>
+                <a href="https://wa.me/6285648684896"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.instagram.com/arzykimarvel?stkn=MWxrcG52cWtxMWJleQ=="><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+
+        <!-- Tambahkan container foto di sini -->
+        <div class="home-img">
+            <img src="foto.png" alt="Arzyki Marvel">
+        </div>
+    </section>
+
+
+    <!-- Section About -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-content">
+            <p>I am a Software Engineering Student at SMK Krian 1 who is interested in web development and programming. I enjoy learning new technologies and creating usefull digital projects.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Membangun website responsif dan modern.</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>UI/UX Design</h3>
+                <p>Desain antarmuka yang ramah pengguna dan estetis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Portfolio -->
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+    <div class="portfolio-container">
+
+        <!-- Project 1: Kangkung -->
+        <div class="portfolio-box">
+            <div class="portfolio-img-wrapper">
+                <img src="kangkung.png" alt="Project 1">
+            </div>
+            <div class="portfolio-layer">
+                <h4>Menanam Kangkung: Solusi Ketahanan Pangan</h4>
+                <p>Proyek penanaman kangkung dalam mata pelajaran Pengembangan Perangkat Lunak dan Gim (PPLG) ini menjadi langkah nyata dalam menghubungkan dunia vokasi dengan kepedulian lingkungan. Lewat kegiatan ini, siswa tidak hanya belajar proses bercocok tanam secara langsung dari awal hingga panen, tetapi juga mengeksplorasi bagaimana teknologi bisa diterapkan untuk mengoptimalkan pertanian perkotaan skala kecil. Lebih dari sekadar tugas sekolah, proyek ini mengajak siswa untuk lebih peka terhadap isu pangan, melatih kedisiplinan dalam merawat tanaman, serta membangun kesadaran akan pentingnya inovasi hijau yang dimulai dari lingkungan sekolah.</p>
+                <a href="javascript:void(0)" class="open-detail"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <!-- Project 2 Web -->
+        <div class="portfolio-box">
+            <div class="portfolio-img-wrapper">
+                <img src="web.png" alt="Project 2">
+            </div>
+            <div class="portfolio-layer">
+                <h4>Membuat Web Portfolio Interaktif</h4>
+                <p>pembuatan website portofolio interaktif menggunakan HTML, CSS, dan JavaScript modern di SMK Krian 1.</p>
+                <a href="javascript:void(0)" class="open-detail"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <!-- Project 3 (Ganti src ke file gambar yang kamu miliki) -->
+        <div class="portfolio-box">
+            <div class="portfolio-img-wrapper">
+                <img src="." alt="Project 3">
+            </div>
+            <div class="portfolio-layer">
+                <h4>Judul Proyek 3</h4>
+                <p>Eksplanasi lengkap dan panjang mengenai proyek ketiga yang telah dibuat...</p>
+                <a href="javascript:void(0)" class="open-detail"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-field">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Popup Wrapper (Login & Register Form) -->
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <!-- Form Login -->
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Form Register -->
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script JavaScript & Ion Icons -->
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Pop-Up Jendela Detail Proyek (Wajib ada di sebelum </body>) -->
+<div id="portfolio-modal" class="portfolio-modal">
+    <div class="portfolio-modal-content">
+        <span class="close-portfolio-modal">&times;</span>
+        <h2 id="modal-project-title">Judul Proyek</h2>
+        <div id="modal-project-desc" class="modal-body-text"></div>
+    </div>
+</div>
+
+</body>
+</html>
