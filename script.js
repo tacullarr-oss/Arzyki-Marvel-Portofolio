@@ -57,19 +57,34 @@ const closeProjectModal = document.querySelector(".close-portfolio-modal");
 const modalProjectTitle = document.getElementById("modal-project-title");
 const modalProjectDesc = document.getElementById("modal-project-desc");
 
+// Project Data Object with Full Descriptions
+const projectData = {
+    1: {
+        title: "Menanam Kangkung: Solusi Ketahanan Pangan",
+        description: "Proyek penanaman kangkung dalam mata pelajaran Pengembangan Perangkat Lunak dan Gim (PPLG) ini menjadi langkah nyata dalam menghubungkan dunia vokasi dengan ketahanan pangan nasional. Melalui praktik langsung di lapangan, siswa SMK Krian 1 belajar menerapkan teknik pertanian modern untuk menghasilkan kangkung berkualitas tinggi. Proyek ini tidak hanya mengajarkan cara menanam dan merawat tanaman, tetapi juga membuka peluang bisnis bagi siswa untuk memahami value chain dalam agribisnis. Dengan dukungan teknologi informasi, dokumentasi proyek ini dilakukan secara sistematis untuk menciptakan best practices yang dapat diterapkan oleh komunitas lokal."
+    },
+    2: {
+        title: "Membuat Web Portfolio Interaktif",
+        description: "Pembuatan website portofolio interaktif menggunakan HTML, CSS, dan JavaScript modern di SMK Krian 1. Proyek ini dirancang untuk menampilkan kemampuan dan karya-karya terbaik sebagai bagian dari pembelajaran web development. Dengan menggunakan teknik responsive design, website ini dapat diakses dengan baik di berbagai perangkat dari desktop hingga mobile. Fitur-fitur interaktif seperti smooth scrolling, animated transitions, dan modal popup membuat pengalaman pengguna menjadi lebih engaging dan profesional. Proyek ini juga mengintegrasikan form contact dan login system untuk mendemonstrasikan kemampuan dalam handling form dan user authentication."
+    },
+    3: {
+        title: "Penanaman Tanaman Herbal (PPLG)",
+        description: "Proyek penanaman tanaman herbal ini merupakan dokumentasi praktis mengenai proses penanaman dan pemeliharaan tanaman herbal secara mandiri. Melalui aktivitas ini, siswa PPLG di SMK Krian 1 mempelajari berbagai jenis tanaman herbal yang memiliki nilai guna tinggi dalam bidang kesehatan dan industri farmasi. Proyek mencakup tahapan persiapan lahan, penanaman benih, irigasi, pemupukan, dan panen dengan standar keberlanjutan lingkungan. Selain aspek agronomis, proyek ini juga mengeksplorasi peluang komersial dengan mengidentifikasi pasar potensial untuk produk herbal berkualitas. Dokumentasi digital yang lengkap memudahkan berbagi pengetahuan dengan generasi siswa berikutnya dan komunitas yang tertarik mengembangkan pertanian herbal."
+    }
+};
+
 document.querySelectorAll(".open-detail").forEach((button) => {
     button.addEventListener("click", function (e) {
         e.preventDefault();
         
-        const box = this.closest(".portfolio-box");
-        const title = box.querySelector(".portfolio-layer h4").innerText;
-        // GET FULL TEXT FROM DATA ATTRIBUTE INSTEAD OF TRUNCATED TEXT
-        const description = this.getAttribute("data-full-desc") || box.querySelector(".portfolio-desc").innerText;
-
-        modalProjectTitle.innerText = title;
-        modalProjectDesc.innerText = description;
-
-        projectModal.style.display = "flex";
+        const projectId = this.getAttribute("data-project-id");
+        const project = projectData[projectId];
+        
+        if (project) {
+            modalProjectTitle.innerText = project.title;
+            modalProjectDesc.innerText = project.description;
+            projectModal.style.display = "flex";
+        }
     });
 });
 
